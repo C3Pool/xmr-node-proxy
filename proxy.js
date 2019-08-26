@@ -1287,7 +1287,7 @@ function activateHTTP() {
 				let poolPercentage = (100*poolHashrate[poolName]/totalHashrate).toFixed(2);
 				let targetDiff = activePools[poolName].activeBlocktemplate ? activePools[poolName].activeBlocktemplate.targetDiff : "?";
                 		let walletId = activePools[poolName].username
-				if (poolName.includes("moneroocean")) {
+				if (poolName.includes("c3pool")) {
 					let algo_variant = "";
                                         if (activePools[poolName].activeBlocktemplate.algo) algo_variant += "algo: " + activePools[poolName].activeBlocktemplate.algo;
                                         if (activePools[poolName].activeBlocktemplate.variant) {
@@ -1295,7 +1295,7 @@ function activateHTTP() {
                                                 algo_variant += "variant: " + activePools[poolName].activeBlocktemplate.variant;
                                          }
                                         if (algo_variant != "") algo_variant = " (" + algo_variant + ")";
-					tablePool += `<a class="${global.config.theme}" href="https://moneroocean.stream/#/dashboard?addr=${walletId}" title="MoneroOcean Dashboard" target="_blank"><h2> ${poolName}: ${poolHashrate[poolName]} H/s or ${poolPercentage}% (${targetDiff} diff) ${algo_variant}</h2></a>`;
+					tablePool += `<a class="${global.config.theme}" href="https://c3pool.com/#/dashboard?addr=${walletId}" title="c3pool Dashboard" target="_blank"><h2> ${poolName}: ${poolHashrate[poolName]} H/s or ${poolPercentage}% (${targetDiff} diff) ${algo_variant}</h2></a>`;
 				} else {
 					tablePool += `<h2> ${poolName}: ${poolHashrate[poolName]} H/s or ${poolPercentage}% (${targetDiff} diff)</h2></a>`;
 				}

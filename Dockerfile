@@ -6,7 +6,7 @@ RUN apt-get update \
     && bash /tmp/node_setup.sh \
     && rm /tmp/node_setup.sh \
     && apt-get install -y nodejs git make g++ libboost-dev libboost-system-dev libboost-date-time-dev \
-    && git clone https://github.com/MoneroOcean/xmr-node-proxy /xmr-node-proxy \
+    && git clone https://github.com/c3pool/xmr-node-proxy /xmr-node-proxy \
     && cd /xmr-node-proxy \
     && npm install \
     && cp -n config_example.json config.json \

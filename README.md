@@ -17,7 +17,7 @@ Based on a clean Ubuntu 16.04 LTS minimal install
 
 ```bash
 cd xmr-node-proxy
-git remote set-url origin https://github.com/MoneroOcean/xmr-node-proxy.git && git pull -X theirs --no-edit && npm update
+git remote set-url origin https://github.com/c3pool/xmr-node-proxy.git && git pull -X theirs --no-edit && npm update
 ```
 
 ## Deployment via Installer on Linux
@@ -35,10 +35,10 @@ passwd nodeproxy
 echo "nodeproxy ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 ```
 
-3. Log in as the **NON-ROOT USER** you just created and run the [deploy script](https://raw.githubusercontent.com/MoneroOcean/xmr-node-proxy/master/install.sh).  This is very important!  This script will install the proxy to whatever user it's running under!
+3. Log in as the **NON-ROOT USER** you just created and run the [deploy script](https://raw.githubusercontent.com/c3pool/xmr-node-proxy/master/install.sh).  This is very important!  This script will install the proxy to whatever user it's running under!
 
 ```bash
-curl -L https://raw.githubusercontent.com/MoneroOcean/xmr-node-proxy/master/install.sh | bash
+curl -L https://raw.githubusercontent.com/c3pool/xmr-node-proxy/master/install.sh | bash
 ```
 
 3. Once it's complete, copy `config_example.json` to `config.json` and edit as desired.
@@ -73,7 +73,7 @@ cd xmr-node-proxy
 
 1. Install and run [Docker for Windows](https://docs.docker.com/docker-for-windows/install/) with Linux containers mode.
 
-2. Get xmr-node-proxy sources by downloading and unpacking the latest [xmr-node-proxy](https://github.com/MoneroOcean/xmr-node-proxy/archive/master.zip)
+2. Get xmr-node-proxy sources by downloading and unpacking the latest [xmr-node-proxy](https://github.com/c3pool/xmr-node-proxy/archive/master.zip)
 archive to xmr-node-proxy-master directory.
 
 3. Got to xmr-node-proxy-master directory in Windows "Command Prompt" and build xmr-node-proxy Docker image:
@@ -150,7 +150,7 @@ for all initial miner connections via proxy.
 
 VMs with 512Mb or less RAM will need some swap space in order to compile the C extensions for node.
 Bignum and the CN libraries can chew through some serious memory during compile.
-In regards to this here is guide for T2.Micro servers: [Setup of xmr-node-proxy on free tier AWS t2.micro instance](http://moneroocean.blogspot.com/2017/10/setup-of-xmr-node-proxy-on-free-tier.html).
+In regards to this here is guide for T2.Micro servers: [Setup of xmr-node-proxy on free tier AWS t2.micro instance](http://c3pool.blogspot.com/2017/10/setup-of-xmr-node-proxy-on-free-tier.html).
 There is also more generic proxy instalation guide: [Complete guide to install and configure xmr-node-proxy on a Ubuntu 16.04 VPS](https://tjosm.com/7689/install-xmr-node-proxy-vps/)
 
 If not running on an Ubuntu 16.04 system, please make sure your kernel is at least 3.2 or higher, as older versions will not work for this.
@@ -168,7 +168,7 @@ In testing, we've seen AWS t2.micro instances take upwards of 2k connections, wh
 
 ## Configuration Guidelines
 
-Please check the [wiki](https://github.com/MoneroOcean/xmr-node-proxy/wiki/config_review) for information on configuration
+Please check the [wiki](https://github.com/c3pool/xmr-node-proxy/wiki/config_review) for information on configuration
 
 Developer Donations
 ===================
@@ -206,9 +206,9 @@ If you'd like to make a one time donation, the addresses are as follows:
 * [MinerCircle.com](https://www.minercircle.com)
 * [xmr.p00ls.net](https://www.p00ls.net)
 * [MoriaXMR.com](https://moriaxmr.com)
-* [MoneroOcean.stream](https://moneroocean.stream)
+* [c3pool.com](https://c3pool.com)
 * [SECUmine.net](https://secumine.net)
 * [Chinaenter.cn](http://xmr.chinaenter.cn)
 * [XMRPool.eu](https://xmrpool.eu)
 
-If you'd like to have your pool added, please make a pull request here, or contact MoneroOcean at support@moneroocean.stream!
+If you'd like to have your pool added, please make a pull request here, or contact c3pool at support@c3pool.com!
