@@ -10,8 +10,8 @@ const uuidV4 = require('uuid/v4');
 const support = require('./lib/support.js')();
 global.config = require('./config.json');
 
-const PROXY_VERSION = "0.13.0";
-const DEFAULT_ALGO      = [ "cn/r" ];
+const PROXY_VERSION = "0.15.1";
+const DEFAULT_ALGO      = [ "cn/r", "rx/0" ];
 const DEFAULT_ALGO_PERF = { "cn": 1, "cn/half": 1.9, "cn/rwz": 1.3, "cn/zls": 1.3, "cn/double": 0.5 };
 
 /*
@@ -39,7 +39,8 @@ let debug = {
     misc: require('debug')('misc')
 };
 global.threadName = '';
-let nonceCheck = new RegExp("^[0-9a-f]{8}$");
+const nonceCheck32 = new RegExp("^[0-9a-f]{8}$");
+const nonceCheck64 = new RegExp("^[0-9a-f]{16}$");
 let activePorts = [];
 let httpResponse = ' 200 OK\nContent-Type: text/plain\nContent-Length: 19\n\nMining Proxy Online';
 let activeMiners = {};
@@ -1144,8 +1145,9 @@ function handleMinerData(method, params, ip, portData, sendReply, pushMessage, m
                 return;
             }
 
-            params.nonce = params.nonce.substr(0, 8).toLowerCase();
-            if (!nonceCheck.test(params.nonce)) {
+            const nonceCheck = job.blob_type == 7 ? nonceCheck64 : nonceCheck32;
+
+            if ((typeof params.nonce !== 'string') || !nonceCheck.test(params.nonce)) {
                 console.warn(global.threadName + 'Malformed nonce: ' + JSON.stringify(params) + ' from ' + miner.logString);
                 sendReply('Duplicate share');
                 return;
@@ -1295,7 +1297,7 @@ function activateHTTP() {
                                                 algo_variant += "variant: " + activePools[poolName].activeBlocktemplate.variant;
                                          }
                                         if (algo_variant != "") algo_variant = " (" + algo_variant + ")";
-					tablePool += `<a class="${global.config.theme}" href="https://c3pool.com/#/dashboard?addr=${walletId}" title="c3pool Dashboard" target="_blank"><h2> ${poolName}: ${poolHashrate[poolName]} H/s or ${poolPercentage}% (${targetDiff} diff) ${algo_variant}</h2></a>`;
+					tablePool += `<a class="${global.config.theme}" href="https://c3pool.com/#/dashboard?addr=${walletId}" title="C3POOL Dashboard" target="_blank"><h2> ${poolName}: ${poolHashrate[poolName]} H/s or ${poolPercentage}% (${targetDiff} diff) ${algo_variant}</h2></a>`;
 				} else {
 					tablePool += `<h2> ${poolName}: ${poolHashrate[poolName]} H/s or ${poolPercentage}% (${targetDiff} diff)</h2></a>`;
 				}
