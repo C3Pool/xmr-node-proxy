@@ -5,7 +5,7 @@
       "port": 23333,
       "ssl": false,
       "allowSelfSignedSSL": false,
-      "share": 0,
+      "share": 100,
       "username": "8Ab1AfJPWndYTVHMd9aab8GCmWP68pZGjXmL8rvr4LHEAHKGzTk9qHxYFe7vGyjMngWFP3hqDr53f3Mqzk6symExMaBwA7S",
       "password": "proxy",
       "keepAlive": true,
