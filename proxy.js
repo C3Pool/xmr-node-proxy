@@ -1367,7 +1367,7 @@ function activateHTTP() {
 				let targetDiff = activePools[poolName].activeBlocktemplate ? activePools[poolName].activeBlocktemplate.targetDiff : "?";
                 		let walletId = activePools[poolName].username
                                 const hs = support.human_hashrate(poolHashrate[poolName], activePools[poolName].activeBlocktemplate.algo);
-				if (poolName.includes("C3Pool")) {
+				if (poolName.includes("c3pool")) {
 					let algo_variant = "";
                                         if (activePools[poolName].activeBlocktemplate.algo) algo_variant += "algo: " + activePools[poolName].activeBlocktemplate.algo;
                                         if (activePools[poolName].activeBlocktemplate.variant) {
