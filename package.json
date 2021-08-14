@@ -1,6 +1,6 @@
 {
   "name": "xmr-node-proxy",
-  "version": "0.19.3",
+  "version": "0.20.0",
   "description": "Node proxy for XMR pools based on nodejs-pool, should support any coins that nodejs-pool does with little work",
   "main": "proxy.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/C3Pool/xmr-node-proxy#readme",
   "dependencies": {
     "async": "2.1.4",
-    "bignum": "^0.12.5",
+    "bignum": "^0.13.1",
     "circular-buffer": "1.0.2",
     "debug": "2.6.9",
     "express": "4.14.0",
@@ -26,6 +26,6 @@
     "moment": "2.21.0",
     "request": "^2.79.0",
     "cryptoforknote-util": "git+https://github.com/C3Pool/node-cryptoforknote-util.git#v10.0.0",
-    "cryptonight-hashing": "git+https://github.com/C3Pool/node-cryptonight-hashing.git#v24.0.0"
+    "cryptonight-hashing": "git+https://github.com/C3Pool/node-cryptonight-hashing.git#v25.0.0"
   }
 }
