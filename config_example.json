@@ -1,12 +1,12 @@
 {
   "pools": [
     {
-      "hostname": "mine.c3pool.com",
+      "hostname": "auto.c3pool.org",
       "port": 23333,
       "ssl": false,
       "allowSelfSignedSSL": false,
       "share": 100,
-      "username": "43987ATFjfFXp9yBojQoifVPK4CerTF7Zaoo4eDY2p6AEp5uewT3PsY7hYHEHvbRivKcexmSaDdXscnnNtveV56pJpCa9uV",
+      "username": "86Xg9yRjmNSBSNsahTSvC4Edf6sqijTGfQqqkY6ACcruj8YFAmeJqP3XJM66A7f4P2dhQexNPoWhdLxaNQcNs4qmQNKGa5X",
       "password": "proxy",
       "keepAlive": true,
       "algo": "rx/0",

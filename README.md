@@ -150,7 +150,7 @@ for all initial miner connections via proxy.
 
 VMs with 512Mb or less RAM will need some swap space in order to compile the C extensions for node.
 Bignum and the CN libraries can chew through some serious memory during compile.
-In regards to this here is guide for T2.Micro servers: [Setup of xmr-node-proxy on free tier AWS t2.micro instance](http://C3Pool.blogspot.com/2017/10/setup-of-xmr-node-proxy-on-free-tier.html).
+In regards to this here is guide for T2.Micro servers: [Setup of xmr-node-proxy on free tier AWS t2.micro instance](http://moneroocean.blogspot.com/2017/10/setup-of-xmr-node-proxy-on-free-tier.html).
 There is also more generic proxy instalation guide: [Complete guide to install and configure xmr-node-proxy on a Ubuntu 16.04 VPS](https://tjosm.com/7689/install-xmr-node-proxy-vps/)
 
 If not running on an Ubuntu 16.04 system, please make sure your kernel is at least 3.2 or higher, as older versions will not work for this.
@@ -174,10 +174,10 @@ Developer Donations
 ===================
 If you'd like to make a one time donation, the addresses are as follows:
 * XMR - ```43987ATFjfFXp9yBojQoifVPK4CerTF7Zaoo4eDY2p6AEp5uewT3PsY7hYHEHvbRivKcexmSaDdXscnnNtveV56pJpCa9uV```
-* BTC - ```3Q4QT5WKMzCh4WqsGF2nKxc8XoLuLLuMqk```
 
 ## Known Working Pools
 
+* [C3Pool.com](https://c3pool.com)
 * [XMRPool.net](https://xmrpool.net)
 * [supportXMR.com](https://supportxmr.com)
 * [pool.xmr.pt](https://pool.xmr.pt)
@@ -188,9 +188,9 @@ If you'd like to make a one time donation, the addresses are as follows:
 * [MinerCircle.com](https://www.minercircle.com)
 * [xmr.p00ls.net](https://www.p00ls.net)
 * [MoriaXMR.com](https://moriaxmr.com)
-* [MoneroOcean.stream](https://MoneroOcean.stream)
+* [moneroocean.stream](https://moneroocean.stream)
 * [SECUmine.net](https://secumine.net)
 * [Chinaenter.cn](http://xmr.chinaenter.cn)
 * [XMRPool.eu](https://xmrpool.eu)
 
-If you'd like to have your pool added, please make a pull request here, or contact C3Pool at support@C3Pool.com!
+If you'd like to have your pool added, please make a pull request here, or contact C3Pool at support@c3pool.com!
