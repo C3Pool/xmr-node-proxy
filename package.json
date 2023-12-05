@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/C3Pool/xmr-node-proxy#readme",
   "dependencies": {
-    "async": "2.1.4",
+    "async": "2.6.4",
     "bignum": "^0.13.1",
     "circular-buffer": "1.0.2",
     "debug": "2.6.9",
