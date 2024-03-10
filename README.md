@@ -150,7 +150,6 @@ for all initial miner connections via proxy.
 
 VMs with 512Mb or less RAM will need some swap space in order to compile the C extensions for node.
 Bignum and the CN libraries can chew through some serious memory during compile.
-In regards to this here is guide for T2.Micro servers: [Setup of xmr-node-proxy on free tier AWS t2.micro instance](http://moneroocean.blogspot.com/2017/10/setup-of-xmr-node-proxy-on-free-tier.html).
 There is also more generic proxy instalation guide: [Complete guide to install and configure xmr-node-proxy on a Ubuntu 16.04 VPS](https://tjosm.com/7689/install-xmr-node-proxy-vps/)
 
 If not running on an Ubuntu 16.04 system, please make sure your kernel is at least 3.2 or higher, as older versions will not work for this.
@@ -177,7 +176,6 @@ If you'd like to make a one time donation, the addresses are as follows:
 
 ## Known Working Pools
 
-* [C3Pool.com](https://c3pool.com)
 * [XMRPool.net](https://xmrpool.net)
 * [supportXMR.com](https://supportxmr.com)
 * [pool.xmr.pt](https://pool.xmr.pt)
@@ -189,8 +187,9 @@ If you'd like to make a one time donation, the addresses are as follows:
 * [xmr.p00ls.net](https://www.p00ls.net)
 * [MoriaXMR.com](https://moriaxmr.com)
 * [moneroocean.stream](https://moneroocean.stream)
+* [C3Pool.com](https://C3Pool.com)
 * [SECUmine.net](https://secumine.net)
 * [Chinaenter.cn](http://xmr.chinaenter.cn)
 * [XMRPool.eu](https://xmrpool.eu)
 
-If you'd like to have your pool added, please make a pull request here, or contact C3Pool at support@c3pool.com!
+If you'd like to have your pool added, please make a pull request here, or contact C3Pool at support@C3Pool.com!

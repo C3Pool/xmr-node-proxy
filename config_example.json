@@ -15,7 +15,7 @@
       "default": true
     },
     {
-      "hostname": "rtm.c3pool.org",
+      "hostname": "mine.c3pool.com",
       "port": 23333,
       "ssl": false,
       "allowSelfSignedSSL": false,
@@ -29,7 +29,7 @@
       "default": false
     },
     {
-      "hostname": "mine.c3pool.com",
+      "hostname": "rtm.c3pool.org",
       "port": 23333,
       "ssl": false,
       "allowSelfSignedSSL": false,
