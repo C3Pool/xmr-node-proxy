@@ -23,7 +23,7 @@
     "debug": "2.6.9",
     "express": "4.14.0",
     "minimist": "1.2.0",
-    "moment": "2.21.0",
+    "moment": "2.29.4",
     "request": "^2.79.0",
     "cryptoforknote-util": "git+https://github.com/C3Pool/node-cryptoforknote-util.git#v15.6.2",
     "cryptonight-hashing": "git+https://github.com/MoneroOcean/node-cryptonight-hashing.git#v29.0.5"
