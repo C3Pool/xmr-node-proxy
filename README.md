@@ -22,7 +22,7 @@ git remote set-url origin https://github.com/C3Pool/xmr-node-proxy.git && git pu
 
 ## Deployment via Installer on Linux
 
-1. Create a user 'nodeproxy' and assign a password (or add an SSH key. If you prefer that, you should already know how to do it)
+1. Create a user 'nodeproxy' and assign a password (or add an SSH key. If you prefer that, you should already know how to do it) 
 
 ```bash
 useradd -d /home/nodeproxy -m -s /bin/bash nodeproxy
@@ -41,7 +41,7 @@ echo "nodeproxy ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 curl -L https://raw.githubusercontent.com/C3Pool/xmr-node-proxy/master/install.sh | bash
 ```
 
-3. Once it's complete, copy `config_example.json` to `config.json` and edit as desired.
+3. Once it's complete, copy `config_example.json` to `config.json` and edit as desired
 4. Run: `source ~/.bashrc`  This will activate NVM and get things working for the following pm2 steps.
 8. Once you're happy with the settings, go ahead and start all the proxy daemon, commands follow.
 
